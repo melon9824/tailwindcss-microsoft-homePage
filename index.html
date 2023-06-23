@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="tailwind css practice project">
-    <title>Microsoft-homePage-tailwindcss</title>
+    <title>tailwindcss-microsoft-homePage</title>
     <!-- rimix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <!-- boxicons -->
@@ -15,7 +15,7 @@
 </head>
 <body>
     <!--=== navbar starts here ===-->
-    <nav class="navbar flex justify-between items-center px-4 md:px-9 lg:px-16  pt-2 pb-3 md:mt-2 md:pb-7 lg:pb-3">
+    <nav class="flex justify-between items-center px-4 md:px-9 lg:px-16  pt-2 pb-3 md:mt-2 md:pb-7 lg:pb-3">
 
         <div class="mt-4 flex justify-center items-center md:hidden">
             <!-- hamburger icon -->
@@ -38,7 +38,7 @@
             </div>
 
             <!-- nav menus -->
-            <ul class="nav__lists md:mt-0 bg-white absolute text-sm w-fit inset-0 -translate-x-96 md:static md:w-auto md:translate-x-0 md:flex md:space-x-4">
+            <ul class="md:mt-0 bg-white absolute text-sm w-fit inset-0 -translate-x-96 md:static md:w-auto md:translate-x-0 md:flex md:space-x-4">
                 <li class="">
                     <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Microsoft 365</a>
                 </li>
@@ -309,10 +309,10 @@
         <!--=== shop section ends ===-->
 
         <!--=== Xbox section starts ===-->
-        <section id="xbox" class="w-full py-20">
+        <section id="xbox" class="w-full h-auto py-10">
             <div class="mx-3 lg:bg-[#f2f2f2] lg:mx-16 flex flex-col lg:flex-row justify-center lg:items-center">
 
-                <img src="img/xbox.webp" alt="" class="">
+                <img src="img/xbox.webp" alt="" class="max-w-full h-auto">
 
                 <div class="bg-white lg:bg-[#f2f2f2] mx-4 lg:mx-0 py-12 md:p-12 lg:p-0 md:shadow-md lg:shadow-none md:-translate-y-11">
                     <h2 class="text-3xl font-semibold">Xbox Series X</h2>
@@ -324,11 +324,77 @@
             </div>
         </section>
         <!--=== Xbox section ends ===-->
+
+        <!--=== business section starts ===-->
+        <section id="business" class="w-full py-10">
+            <div class="mx-2 lg:mx-16">
+                <h2 class="text-3xl font-semibold mb-5">For business</h2>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-14">
+                    <!-- card 1 -->
+                <div class="cursor-pointer">
+                    <img src="img/business-img-1.jpg" alt="Shop image" class="w-full">
+
+                    <h2 class="text-[21px] leading-6 font-semibold mt-4 mb-2">Surface Pro 9 Business</h2>
+
+                    <p class="mb-6">Lorem ipsum dolor sit amet adipisicing elit Neque quod Intel&#174; Core ex culpa deserunt repellat amet adipisicing.</p>
+
+                    <p class="text-blue-600 hover:tracking-wide transition-all duration-300">
+                        <a href="#" class="font-semibold hover:underline">Shop Surface Pro 9 for Business</a>
+                        <span class="ml-1 font-normal">&#10095;</span>
+                    </p>
+                </div>
+
+                <!-- card 2 -->
+                <div class="cursor-pointer">
+                    <img src="img/business-img-2.webp" alt="Shop image" class="w-full">
+
+                    <h2 class="text-[21px] leading-6 font-semibold mt-4 mb-2">Try Microsoft 365 for free</h2>
+
+                    <p class="mb-6">Lorem ipsum dolor adipisicing elit Neque quod Intel&#174; Core ex elit Neque ipsum dolor culpa deserunt repellat.</p>
+
+                    <p class="text-blue-600 hover:tracking-wide transition-all duration-300">
+                        <a href="#" class="font-semibold hover:underline">Start your free trial</a>
+                        <span class="ml-1 font-normal">&#10095;</span>
+                    </p>
+                </div>
+
+                <!-- card 3 -->
+                <div class="cursor-pointer">
+                    <img src="img/business-img-3.avif" alt="Shop image" class="w-full">
+
+                    <h2 class="text-[21px] leading-6 font-semibold mt-4 mb-2">Join the era of AI</h2>
+
+                    <p class="mb-6">Lorem ipsum dolor sit amet  Intel&#174; Core ex culpa deserunt repellat.</p>
+
+                    <p class="text-blue-600 hover:tracking-wide transition-all duration-300">
+                        <a href="#" class="font-semibold hover:underline">Explore AI solutions</a>
+                        <span class="ml-1 font-normal">&#10095;</span>
+                    </p>
+                </div>
+
+                <!-- card 4 -->
+                <div class="cursor-pointer">
+                    <img src="img/business-img-4.webp" alt="Shop image" class="w-full">
+
+                    <h2 class="text-[21px] leading-6 font-semibold mt-4 mb-2">Wecome to your Windows 365 Cloud PC</h2>
+
+                    <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit Neque quod Intel&#174; Core ex culpa deserunt repellat.</p>
+
+                    <p class="text-blue-600 hover:tracking-wide transition-all duration-300">
+                        <a href="#" class="font-semibold hover:underline">Get it today</a>
+                        <span class="ml-1 font-normal">&#10095;</span>
+                    </p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!--=== business section ends ===-->
     </main>
 
 
     <!--=== footer starts ===-->
-    <footer>
+    <footer class="w-full pt-14">
         <div class="bg-gray-200/50">
             <div class="px-6 lg:px-16 py-10 flex flex-col gap-y-10">
                 <!-- footer top -->
