@@ -15,9 +15,9 @@
 </head>
 <body>
     <!--=== navbar starts here ===-->
-    <nav class="flex justify-between items-center px-4 md:px-9 lg:px-16  pt-2 pb-3 md:mt-2 md:pb-7 lg:pb-3">
+    <nav class="w-full flex justify-between items-center px-4 md:px-9 lg:px-16 pt-2 pb-3 md:pt-2 md:mt-0 md:pb-6 mdx:pb-0">
 
-        <div class="mt-4 flex justify-center items-center md:hidden">
+        <div class="mt-0 flex justify-center items-center md:hidden">
             <!-- hamburger icon -->
             <div class="hamburger inline-block cursor-pointer md:hidden">
                 <div class="line h-px w-5 my-1 bg-black"></div>
@@ -31,46 +31,86 @@
             </div>
         </div>
 
-        <div class="logo text-center -mt-1 flex items-center space-x-7 md:order-1">
+        <div class="text-xs text-center -mt-1 flex items-center gap-x-3 md:order-1">
             <!-- logo -->
-            <div class="mt-2 md:-mt-1">
-                <img src="img/microsoft-logo-img.png" alt="logo image" class="logo w-28">
+            <div class="mt-2 md:-mt-1 md:mr-3">
+                <img src="img/microsoft-logo-img.png" alt="logo image" class="w-[108px]">
             </div>
 
-            <!-- nav menus -->
-            <ul class="md:mt-0 bg-white absolute text-sm w-fit inset-0 -translate-x-96 md:static md:w-auto md:translate-x-0 md:flex md:space-x-4">
-                <li class="">
+            <!-- nav menu lists -->
+            <ul class="mt-0 bg-white absolute w-fit inset-0 -translate-x-96 md:static md:w-auto md:translate-x-0 md:flex gap-x-4">
+                <li>
                     <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Microsoft 365</a>
                 </li>
 
-                <li class="">
+                <li>
                     <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Terms</a>
                 </li>
 
-                <li class="">
+                <li>
                     <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Windows</a>
                 </li>
 
-                <li class="">
+                <li>
                     <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Surface</a>
                 </li>
 
-                <li class="">
-                    <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">More</a>
+                <li class="hidden mdm:block">
+                    <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Xbox</a>
+                </li>
+
+                <li class="hidden mdl:block">
+                    <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Deals</a>
+                </li>
+
+                <li class="hidden mdx:block">
+                    <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Small Business</a>
+                </li>
+
+                <li class="hidden mdx:block">
+                    <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Support</a>
                 </li>
             </ul>
+
+            <!-- more -->
+            <div id="more" class="mt-0 hidden md:block mdx:hidden">
+                <!-- more btn -->
+                <div id="more-btn" class="xl:hidden">
+                    <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">More</a>
+
+                    <i class="ri-arrow-down-s-line text-base text-gray-500"></i>
+                </div>
+
+                <!-- more lists -->
+                <ul id="more-lists" class="hidden bg-gray-100 absolute top-14 text-left px-4 py-2">
+                    <li class="py-2 block mdm:hidden">
+                        <a href="#" class="">Xbox</a>
+                    </li>
+
+                    <li class="py-2 block mdl:hidden">
+                        <a href="#" class="">Deals</a>
+                    </li>
+
+                    <li class="py-2 block mdx:hidden">
+                        <a href="#" class="">Small Business</a>
+                    </li>
+
+                    <li class="py-2 block mdx:hidden">
+                        <a href="#" class="">Support</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- all microsoft -->
-        <div class="flex items-center gap-6 md:-mt-2 md:order-2 ">
-            <ul class="hidden md:block text-sm">
-                <li id="all-microsoft" class="p-4 w-full">
-                    <div>
+        <div class="flex items-center gap-6 md:-mt-2 md:order-2">
+            <ul class="hidden md:block text-xs">
+                <li  id="all-microsoft" class="p-4 w-full">
+                    <!-- all microsoft btn -->
+                    <div id="all-microsoft-btn">
                         <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">All Microsoft</a>
 
-                        <button id="all-microsoft-btn" >
-                            <i class="ri-arrow-down-s-line text-lg text-gray-500"></i>
-                        </button>
+                        <a href="#"><i class="ri-arrow-down-s-line text-base text-gray-500"></i></a>
                     </div>
                     <!-- all microsoft lists -->
                     <div id="all-microsoft-lists" class="opacity-0 absolute container bg-gray-100 w-screen top-14 right-0 pt-4 flex flex-col gap-6 border-b-2 border-gray-700 z-10 transition ease-in-out duration-500">
@@ -161,7 +201,6 @@
                     </div>
                 </li>
             </ul>
-
 
             <!-- icons -->
             <div class="flex gap-6 mt-2">
@@ -390,9 +429,18 @@
             </div>
         </section>
         <!--=== business section ends ===-->
+
+        <!--=== parallax section stars ===-->
+        <section id="parallax">
+
+        </section>
+        <!--=== parallax section ends ===-->
     </main>
 
 
+    <!--=== scrollup ===-->
+
+    
     <!--=== footer starts ===-->
     <footer class="w-full pt-14">
         <div class="bg-gray-200/50">
