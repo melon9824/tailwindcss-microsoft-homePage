@@ -15,7 +15,7 @@
 </head>
 <body>
     <!--=== navbar starts here ===-->
-    <nav class="w-full flex justify-between items-center px-4 md:px-9 lg:px-16 pt-2 pb-3 md:pt-2 md:mt-0 md:pb-6 mdx:pb-0">
+    <nav class="w-full flex justify-between items-center px-4 md:px-9 lg:px-20 pt-2 pb-4 md:pt-1 md:mt-0 md:pb-6 mdx:pb-0">
 
         <div class="mt-0 flex justify-center items-center md:hidden">
             <!-- hamburger icon -->
@@ -103,7 +103,7 @@
         </div>
 
         <!-- all microsoft -->
-        <div class="flex items-center gap-6 md:-mt-2 md:order-2">
+        <div class="flex items-center gap-6 md:-mt-1 md:order-2">
             <ul class="hidden md:block text-xs">
                 <li  id="all-microsoft" class="p-4 w-full">
                     <!-- all microsoft btn -->
@@ -348,8 +348,8 @@
         <!--=== shop section ends ===-->
 
         <!--=== Xbox section starts ===-->
-        <section id="xbox" class="w-full h-auto py-10">
-            <div class="mx-3 lg:bg-[#f2f2f2] lg:mx-16 flex flex-col lg:flex-row justify-center lg:items-center">
+        <section id="parallax" class="w-full h-auto py-10">
+            <div class="mx-3 lg:bg-[#f2f2f2] lg:mx-16 flex flex-col lg:flex-row justify-center lg:items-center cursor-pointer">
 
                 <img src="img/xbox.webp" alt="" class="max-w-full h-auto">
 
@@ -431,10 +431,41 @@
         <!--=== business section ends ===-->
 
         <!--=== parallax section stars ===-->
-        <section id="parallax">
+        <section id="parallax" class="w-full py-10">
+            <div class="mx-3 lg:bg-[#f2f2f2] lg:mx-16 flex flex-col lg:flex-row justify-center lg:items-center cursor-pointer">
 
+                <!-- for tablet & below -->
+                <div class="lg:flex flex-col justify-center items-center lg:flex-row">
+                    <!-- image -->
+                    <img src="img/parallax-img-2.avif" alt="" class="w-screen h-auto mx-auto relative">
+
+                    <!-- article -->
+                    <article class="bg-white mx-4 py-12 md:p-12 md:shadow-md lg:shadow-none md:-translate-y-11 lg:p-6 lg:translate-y-0 lg:absolute lg:w-1/2 lg:right-0">
+                        <h2 class="text-3xl font-semibold">Harnasing AI breakthroughs for humanity</h2>
+
+                        <p class="my-4">Lorem ipsum dolor sit amet consectetur GPT-4 adipisicing elit. Autem, nulla? Tempore accusamus mollitia repellendus numquam similique quas id.</p>
+
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2">Read the essays</button>
+                    </article>
+                </div>
+            </div>
         </section>
         <!--=== parallax section ends ===-->
+
+        <!--=== social section starts ===-->
+        <section id="social" class="">
+            <div class="mx-3 lg:mx-16 flex items-center gap-5">
+                <!-- title -->
+                <h1 class="text-base font-normal">Follow Microsoft</h1>
+                <!-- social icons -->
+                <div class="flex justify-center items-center gap-3">
+                    <img src="img/social-facebook-img.avif" alt="facebook logo" class="w-8 h-8">
+                    <img src="img/social-twitter.webp" alt="twitter logo" class="w-8 h-8">
+                    <img src="img/social-linkedin-img.avif" alt="linedin logo" class="w-8 h-8">
+                </div>
+            </div>
+        </section>
+        <!--=== social section ends ===-->
     </main>
 
 
