@@ -6,3 +6,9 @@
 .toggleStyle {
     @apply bg-gray-100 border border-dashed border-b-0 border-gray-600 underline underline-offset-8 decoration-2 transition-all ease-linear duration-300;
 }
+
+
+/* scroll up button*/
+.show-scroll{
+    @apply bottom-12;
+}
