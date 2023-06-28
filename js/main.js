@@ -1,4 +1,19 @@
 /**
+ *! small devices menu lists show / hide
+ */
+const mobileMenuBtn = document.querySelector('#mobile-menu-btn');
+const mobileMenuLists = document.querySelector('#mobile-menu-lists');
+const mobileMenuIcon = document.querySelector('.fas');
+
+// menu lists show
+mobileMenuBtn.addEventListener('click', () => {
+    mobileMenuLists.classList.toggle('hidden'); 
+    
+    mobileMenuIcon.classList.toggle('fa-times')
+})
+
+
+/**
  *! all microsoft lists show / hide
  */
 const allMicrosoft = document.getElementById('all-microsoft');
@@ -15,14 +30,11 @@ allMicrosoftBtn.addEventListener('click', () => {
 /**
  *! more lists show / hide
  */
-const more = document.getElementById('more');
 const moreBtn = document.getElementById('more-btn');
 const moreLists = document.getElementById('more-lists');
 
 moreBtn.addEventListener('click', () => {
     moreLists.classList.toggle('hidden');
-
-    more.classList.toggle('toggleStyle');
 })
 
 

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="tailwind css practice project">
     <title>tailwindcss-microsoft-homePage</title>
+
     <!-- rimix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- boxicons -->
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b766a53cfd.js" crossorigin="anonymous"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -17,17 +18,84 @@
     <!--=== navbar starts here ===-->
     <nav class="w-full flex justify-between items-center px-4 md:px-9 lg:px-20 pt-2 pb-4 md:pt-1 md:mt-0 md:pb-6 mdx:pb-0">
 
-        <div class="mt-0 flex justify-center items-center md:hidden">
-            <!-- hamburger icon -->
-            <div class="hamburger inline-block cursor-pointer md:hidden">
-                <div class="line h-px w-5 my-1 bg-black"></div>
-                <div class="line h-px w-5 my-1 bg-black"></div>
-                <div class="line h-px w-5 my-1 bg-black"></div>
+        <div id="mobile-menu" class="mt-0 flex justify-center items-center md:hidden">
+            <!-- small devices menu toggle icon -->
+            <div id="mobile-menu-btn" class="inline-block cursor-pointer md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
             </div>
+
+            <!-- nav menu lists for small devices-->
+            <ul id="mobile-menu-lists" class="hidden text-base absolute bg-gray-100 w-full top-14 left-0 px-1 border-b border-gray-900">
+                <li class="text-left px-3 py-5 border-b border-gray-200">
+                    <a href="#microsoft-365">Microsoft 365</a>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200">
+                    <a href="#terms" class="">Terms</a>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200">
+                    <a href="#windows">Windows</a>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200">
+                    <a href="#surface">Surface</a>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200">
+                    <a href="#xbox">Xbox</a>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200">
+                    <a href="#deals">Deals</a>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200">
+                    <a href="#small-business" class="">Small Business</a>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200">
+                    <a href="#support">Support</a>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200 flex justify-between items-center">
+                    <a href="#software">Software</a>
+                    <i class="ri-arrow-down-s-line text-lg text-gray-500"></i>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200 flex justify-between items-center">
+                    <a href="#pcs-&-devices">PCs & Devices</a>
+                    <i class="ri-arrow-down-s-line text-lg text-gray-500"></i>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200 flex justify-between items-center">
+                    <a href="#entertainment">Entertainment</a>
+                    <i class="ri-arrow-down-s-line text-lg text-gray-500"></i>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200 flex justify-between items-center">
+                    <a href="#business">Business</a>
+                    <i class="ri-arrow-down-s-line text-lg text-gray-500"></i>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200 flex justify-between items-center">
+                    <a href="#developer-&-it">Developer & IT</a>
+                    <i class="ri-arrow-down-s-line text-lg text-gray-500"></i>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200 flex justify-between items-center">
+                    <a href="#others">Other</a>
+                    <i class="ri-arrow-down-s-line text-lg text-gray-500"></i>
+                </li>
+
+                <li class="text-left px-3 py-5 border-b border-gray-200">
+                    <a href="#view-sitemap">View Sitemap</a>
+                </li>
+            </ul>
 
             <!-- search icon for small devices-->
             <div class="md:hidden ml-6">
-                <i class='bx bx-search rotate-90 text-lg text-gray-500'></i>
+                <i class="fas fa-search rotate-90"></i>
             </div>
         </div>
 
@@ -37,8 +105,8 @@
                 <img src="img/microsoft-logo-img.png" alt="logo image" class="w-[108px]">
             </div>
 
-            <!-- nav menu lists -->
-            <ul class="mt-0 bg-white absolute w-fit inset-0 -translate-x-96 md:static md:w-auto md:translate-x-0 md:flex gap-x-4">
+            <!-- nav menu lists for large devices-->
+            <ul class="md:static mt-0 bg-white absolute w-fit inset-0 -translate-x-96  md:w-auto md:translate-x-0 md:flex gap-x-4">
                 <li>
                     <a href="#" class="hover:underline underline-offset-8 decoration-2 transition-all">Microsoft 365</a>
                 </li>
@@ -206,7 +274,7 @@
             <div class="flex gap-6 mt-2">
                 <!-- search icon for medium and large devices -->
                 <div class="hidden md:block">
-                    <i class='bx bx-search rotate-90 text-lg text-gray-800'></i>
+                    <i class="fas fa-search rotate-90"></i>
                 </div>
     
                 <div class="md:order-3 flex gap-6">
@@ -225,7 +293,7 @@
 
 
     <!--=== hero area startss here ===-->
-    <section class="flex items-center flex-col-reverse lg:h-screen lg:flex-row lg:bg-gradient-to-r from-[#aed4fb] to-[#cbe3fb]">
+    <section class="mx-1 flex items-center flex-col-reverse lg:h-screen lg:flex-row lg:bg-gradient-to-r from-[#aed4fb] to-[#cbe3fb]">
         <div class="left w-[97%] lg:pl-20 py-6 lg:w-full lg:mx-6 mx-auto md:-translate-y-12 lg:translate-y-0 bg-white lg:bg-transparent">
             <h1 class="text-3xl font-semibold mx-6">Microsoft 365</h1>
 
@@ -247,10 +315,11 @@
     </section>
     <!--=== hero area ends here ===-->
 
+
     <main>
         <!--=== offer-section start ===-->
         <section id="offer" class="w-full py-10 bg-white">
-            <div class="container mx-auto flex justify-evenly px-8 py-10 gap-6 flex-wrap">
+            <div class="container mx-auto flex justify-evenly px-8 lg:px-20 xl:px-32 py-10 gap-6 flex-wrap">
                 <div class="flex flex-col justify-center items-center space-y-2">
                     <img src="img/offer-img-1.webp" alt="" class="">
                     
