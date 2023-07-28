@@ -4,7 +4,8 @@
   "description": "Microsoft home page practice project using tailwind css",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "vite build"
   },
   "keywords": ["tailwindcss",
                 "postcss",
